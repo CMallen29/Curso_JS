@@ -78,5 +78,53 @@ resultado = -num1;        //Pone un numero positivo a negativo
 
 
 
+//----[ Comparación ]----
+
+let nume1 = 2;
+let nume2 = 3;
+let texto = "2";
+
+
+document.write(nume1 == nume2);   //Igual que: devuelve un booleano, en este caso false
+document.write(nume1 != nume2);   //Distinto que: devuelve un booleano, en este caso true
+
+document.write(nume1 === texto);  //Estrictamente igual: tambien compara si son el mismo tipo. Devuelve un booleano, en este caso false
+
+
+
+
+//----[ Lógicos ]----
+
+let valor1 = true;
+let valor2 = true;
+
+
+resultado = valor1 && valor2;      //AND : si las 2 conciones se cumplen es true
+resultado = valor1 || valor2;      //OR : si 1 de las conciones se cumplen es true
+
+document.write(!valor1);           //NOT : cambia el booleano al contrario
+
+
+
+
+
 
 //-------------------------------------- CONCATENACION --------------------------------------
+
+
+num1 = 5;
+num2 = 4;
+
+concatenacion = num1+num2;          //Da como resultado 9
+concatenacion = ""+num1+num2;       //Forzamos un string con "" y el resultado es la concatenacion: 54
+concatenacion = num1.concat(num2);  //Este método solo funciona con Strings. Aqui daria error
+
+nombre = "Carlos"
+frase = `Me llamo ${nombre}`;  //Se puede concatenar integrando una variable con ${}. Obligatorio usar comillas ``
+
+frase = 'Comillas "simples" para pòder usar dobles';   //Para poner comillas simples se usan las comillas simples y viceversa
+
+
+
+
+
