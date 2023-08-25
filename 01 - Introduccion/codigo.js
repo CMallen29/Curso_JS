@@ -108,7 +108,6 @@ document.write(!valor1);           //NOT : cambia el booleano al contrario
 
 
 
-
 //-------------------------------------- CONCATENACION --------------------------------------
 
 
@@ -122,7 +121,30 @@ concatenacion = num1.concat(num2);  //Este método solo funciona con Strings. Aq
 nombre = "Carlos"
 frase = `Me llamo ${nombre}`;  //Se puede concatenar integrando una variable con ${}. Obligatorio usar comillas ``
 
-frase = 'Comillas "simples" para pòder usar dobles';   //Para poner comillas simples se usan las comillas simples y viceversa
+frase = 'Comillas "simples" para poder usar dobles';   //Para poner comillas simples se usan las comillas simples y viceversa
+
+
+
+
+
+//-------------------------------------- CONDICIONALES --------------------------------------
+
+let numerico = 10;
+
+
+
+if (numerico == 5) {
+  alert("El numerico es 5");
+} 
+
+else if (numerico == 8){
+  alert("El numerico es 8");
+}
+
+else {
+  alert("El numerico es 10");
+}
+
 
 
 
