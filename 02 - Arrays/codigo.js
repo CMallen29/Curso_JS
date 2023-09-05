@@ -130,3 +130,72 @@ for (let array in array2){
 
 
 
+
+
+
+
+
+
+
+//------ [ FUNCIONES ] ------
+
+
+function saludar() {     //Definimos y declaramos la funcion
+
+    let respuesta = prompt("Hola! Como estas?");
+
+    if (respuesta == "bien"){
+      alert("Estupendo");
+    }else{
+      alert("Lastima");
+    }
+}
+
+document.write(saludar()+"<br>");   //Llamamos a la funcion. Como no tiene return devolverá UNDEFINED
+
+
+
+//RETURN ................
+
+function despedir() {               //Deficnimos y declaramos la funcion
+  return "Adios!";                  //Al poner el return para de ejecutarse la funcion
+  alert("Esto no se ejecutará");    //Esto no se ejecuta porque va después del return
+}
+
+document.write(despedir()+"<br>"); //Llamamos a la funcion
+
+
+
+//PARAMETROS ................
+
+let num = 32;
+let num2= 12;
+
+function suma(a,b){      //Una función puede recibir argumentos
+  return a+b;
+}
+
+document.write(suma(10,5)+"<br>");        //Se le pasan parámetros para que funcione
+document.write(suma(num,num2)+"<br>");    //Se pueden pasar variables   
+
+
+
+//FUNCION FLECHA ................
+
+
+const saludando = function(nombre) {                 
+  document.write(`Hola ${nombre}! Que tal?<br>`);
+}
+
+
+const saludando2 = nombre => document.write(`Hola ${nombre}! Que tal?<br>`);   // La palabra function se cambia por => .
+                                                                              // Si solo recoje 1 argumento no hace falta paréntesis.
+                                                                              // Cuando hay 1 linea de codigo no hace falta {} y hace return automatico.
+saludando("Pepe");
+saludando2("Juan");
+
+
+
+
+
+
